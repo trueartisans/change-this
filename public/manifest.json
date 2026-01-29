@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Change This",
+    "version": "1.0.0",
+    "description": "Replace strings in URLs for testing purposes.",
+    "permissions": [
+        "declarativeNetRequest",
+        "storage",
+        "webRequest"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "128": "icons/icon128.png"
+    }
+}
